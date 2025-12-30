@@ -1,24 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <style>
       body{
-        background: linear-gradient(to bottom,rgb(239,153,16),rgb(216,65,11));
-        min-height: 100vh;
-
+        background:rgb(1,7,48);
       }
       header{
-        position: absolute;
+        min-width: 100vw;
+        background:rgb(254,254,255);
+        height: 60px;
+        color:black ;
+       text-align: center; 
+       position: relative;
+       bottom: 20px;
+      }
+      #head{
+        font-size: 200%;
+        position: relative;
+        top:10px;
+        
+      }
+      #main{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 15px;
+        position:relative;
+        top: 60px;
+        font-size:150% ;
+      }
+      .desc{
+        height: 50px;
+        color: white;
+      }
+      #images{
+        overflow: scroll;
+        scroll-behavior: ;
+      }
+      footer{
+        
       }
     </style>
-    
   </head>
   <body>
-  <header> 
-  </header> 
-  <h1></h1>
-  <nav>hh </nav>
+    <header>
+      <p id="head">
+        Horizon X
+      </p>
+      <nav>
+        
+      </nav>
+    </header>
+    <div id="main">
+      <div class="desc">
+       <p>🚚      Quick Service </p>
+      </div>
+      <div class="desc">
+        <p>💰     Very Affordable products </p>
+      </div>
+      <div class="desc">
+       <p>👌     High quality goods</p>
+      </div>
+    </div>
+    <div id="images">
+      <img>
+      <img>
+      <img>
+    </div>
+    <article>
+      
+    </article>
+    <footer>
+      
+    </footer>
   </body>
 </html>
