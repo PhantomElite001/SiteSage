@@ -5,49 +5,68 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <style>
       body{
+       display: flex;
+       flex-direction: column;
         background:rgb(1,7,48);
+        min-height: 100vh;
+        font-family: Georgia;
       }
       header{
-        min-width: 100vw;
+        min-width: 100%;
         background:rgb(254,254,255);
         height: 60px;
         color:black ;
        text-align: center; 
-       position: relative;
-       bottom: 20px;
       }
       #head{
         font-size: 200%;
-        position: relative;
-        top:10px;
+        
         
       }
       #main{
+        margin-top: 1em;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1);
         row-gap: 15px;
-        position:relative;
-        top: 60px;
-        font-size:150% ;
+        font-size:1.5rem ;
       }
       .desc{
         height: 50px;
         color: white;
       }
+      @keyframes scrollX{
+        from {transform: translateX(0);}
+        to {transform:translateX(-135%);}
+      }
+      .marquee{
+        overflow: hidden;
+      }
       #images{
-        overflow: scroll;
-        scroll-behavior: ;
+        padding-top: 1.5rem;
+        display: flex;
+        gap: 15px;
+      
+        animation: scrollX 5s linear infinite ;
+      }
+      images img{
+        height: 150px;
+        flex-shrink: 0;
       }
       footer{
-        
+        min-width: 100%;
+        background:rgb(254,254,255);
+        height: 10vh;
+        color:black ;
+       text-align: center; 
+       margin-top: auto;
       }
     </style>
   </head>
   <body>
     <header>
-      <p id="head">
+      <h1 id="head">
         Horizon X
-      </p>
+      </h1>
       <nav>
         
       </nav>
@@ -63,16 +82,23 @@
        <p>👌     High quality goods</p>
       </div>
     </div>
+    <div class="marquee">
     <div id="images">
-      <img>
-      <img>
-      <img>
+      <img src="/Imgs/img1.jpg" width="140px"/>
+      <img src="/Imgs/img2.jpg" width="140px"/>
+      <img src="/Imgs/img3.jpg" width="140px"/>
+      
+            <img src="/Imgs/img1.jpg" width="140px"/>
+      <img src="/Imgs/img2.jpg" width="140px"/>
+      <img src="/Imgs/img3.jpg" width="140px"/>
+    </div>
     </div>
     <article>
       
     </article>
     <footer>
-      
+      All rights reserved <br>
+      contact at 677386513 <br>
     </footer>
   </body>
 </html>
