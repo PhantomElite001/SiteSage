@@ -1,0 +1,69 @@
+body{
+       display: flex;
+       flex-direction: column;
+        background:rgb(1,7,48);
+        min-height: 100vh;
+        font-family: system-ui ,Sans-Serif;
+      }
+header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        min-width: 100%;
+        background:rgb(254,254,255);
+        color:black ;
+      }
+.tabs {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        gap: 1.5rem;
+}
+      
+.tabs a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600
+      }
+ #hero{
+        margin-top: 1.8rem;
+        text-align: center;
+      }
+#cta{
+        color:white;
+        font-size: 140%;
+        border-radius: 25%;
+        background: orange;
+        width: 120px;
+        height: 40px;
+        text-decoration: none;
+        padding-top: 1rem;
+        text-align: center;
+        align-self: center;
+      }
+#cta hover{
+        background: blue ;
+      }
+#main{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+        font-size:1.5rem ;
+      }
+.desc{
+        padding-bottom:1.8rem;
+        color: white;
+        background: rgba(1,7,80,1);
+      }
+footer{
+        min-width: 100%;
+        background:rgb(254,254,255);
+        height: auto;
+        color:black ;
+       text-align: center; 
+       margin-top: auto;
+      }
