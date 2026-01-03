@@ -9,53 +9,67 @@
        flex-direction: column;
         background:rgb(1,7,48);
         min-height: 100vh;
-        font-family: Georgia;
+        font-family: system-ui ,Sans-Serif;
       }
       header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 1rem;
         min-width: 100%;
         background:rgb(254,254,255);
-        height: 60px;
         color:black ;
-       text-align: center; 
       }
-      #head{
-        font-size: 200%;
-        
-        
+      .tabs {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        gap: 1.5rem;
+}
+      
+      .tabs a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600
+      }
+      #hero{
+        margin-top: 1.8rem;
+        text-align: center;
+      }
+      #cta{
+        color:white;
+        font-size: 140%;
+        border-radius: 25%;
+        background: orange;
+        width: 120px;
+        height: 40px;
+        text-decoration: none;
+        padding-top: 1rem;
+        text-align: center;
+        align-self: center;
+      }
+      #cta hover{
+        background: blue ;
       }
       #main{
-        margin-top: 1em;
+        margin-top: 1rem;
         display: grid;
-        grid-template-columns: repeat(1);
+        grid-template-columns: 1fr;
         row-gap: 15px;
         font-size:1.5rem ;
       }
       .desc{
+        padding-bottom:1.8rem;
         height: 50px;
         color: white;
-      }
-      @keyframes scrollX{
-        from {transform: translateX(0);}
-        to {transform:translateX(-135%);}
-      }
-      .marquee{
-        overflow: hidden;
-      }
-      #images{
-        padding-top: 1.5rem;
-        display: flex;
-        gap: 15px;
-      
-        animation: scrollX 5s linear infinite ;
-      }
-      images img{
-        height: 150px;
-        flex-shrink: 0;
+        background: rgba(1,7,80,1);
       }
       footer{
         min-width: 100%;
         background:rgb(254,254,255);
-        height: 10vh;
+        height: auto;
         color:black ;
        text-align: center; 
        margin-top: auto;
@@ -64,41 +78,38 @@
   </head>
   <body>
     <header>
-      <h1 id="head">
-        Horizon X
+      <h1>
+        SiteSage
       </h1>
-      <nav>
-        
-      </nav>
+      <nav aria-label="Main tabs">
+        <ul class="tabs">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+     </nav>
     </header>
+    <article id="hero" style="color:white">
+      <h1>Your simple website builder</h1> 
+      <h3>we help small businesses gain online exposure by building simple neatly designed websites</h3>
+    </article >
+    <div id="cta"><a href="https://wa.me/237678759806">contact us</a></div>
     <div id="main">
       <div class="desc">
-       <p>🚚      Quick Service </p>
+       <p>🚚    speedy completion </p>
       </div>
       <div class="desc">
-        <p>💰     Very Affordable products </p>
+        <p>💰    Affordable price ranges </p>
       </div>
       <div class="desc">
-       <p>👌     High quality goods</p>
+       <p>👌     simple quality sites</p>
       </div>
     </div>
-    <div class="marquee">
-    <div id="images">
-      <img src="/Imgs/img1.jpg" width="140px"/>
-      <img src="/Imgs/img2.jpg" width="140px"/>
-      <img src="/Imgs/img3.jpg" width="140px"/>
-      
-            <img src="/Imgs/img1.jpg" width="140px"/>
-      <img src="/Imgs/img2.jpg" width="140px"/>
-      <img src="/Imgs/img3.jpg" width="140px"/>
-    </div>
-    </div>
-    <article>
-      
-    </article>
     <footer>
-      All rights reserved <br>
-      contact at 677386513 <br>
+      
+      contact at +237 678 759 806 <br>
+      OR email chiemeriamarvelous10@gmail.com<br>
+       © SiteSage 2026
     </footer>
   </body>
 </html>
