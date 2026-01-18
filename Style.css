@@ -1,32 +1,33 @@
 body{
+       margin-left: 20px;
+       margin-right: 20px;
        display: flex;
        flex-direction: column;
         background:rgb(1,7,48);
-        min-height: 100vh;
+      /*  min-height: 100vh;*/
         font-family: system-ui ,Sans-Serif;
+        
       }
 header{
+        margin-right: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0.5rem 1rem;
-        min-width: 100%;
-        background:rgb(254,254,255);
-        color:black ;
+        background:none;
+        color:orange ;
       }
 .tabs {
         display: flex;
+        flex-direction: row;
         list-style: none;
-        padding: 0;
-        margin: 0;
         justify-content: center;
-        gap: 1.5rem;
+        gap: 2rem;
 }
       
 .tabs a {
         text-decoration: none;
-        color: black;
-        font-weight: 600
+        color:orange;
       }
  #hero{
         margin-top: 1.8rem;
@@ -37,33 +38,32 @@ header{
         font-size: 140%;
         border-radius: 25%;
         background: orange;
-        width: 120px;
-        height: 40px;
+        height: auto;
         text-decoration: none;
-        padding-top: 1rem;
+        padding: 1rem;
         text-align: center;
         align-self: center;
       }
-#cta hover{
-        background: blue ;
+#cta:hover{
+        color:blue ;
       }
 #main{
-        margin-top: 1rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 15px;
-        font-size:1.5rem ;
+        margin-top: 0.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
       }
 .desc{
-        padding-bottom:1.8rem;
+        padding:1.8rem;
+        text-align: center;
+        border-radius:15%;
+        width: 210px;
         color: white;
         background: rgba(1,7,80,1);
       }
 footer{
-        min-width: 100%;
-        background:rgb(254,254,255);
-        height: auto;
-        color:black ;
+        margin-top: 40px;
+        color:white;
        text-align: center; 
-       margin-top: auto;
       }

@@ -2,114 +2,69 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <style>
-      body{
-       display: flex;
-       flex-direction: column;
-        background:rgb(1,7,48);
-        min-height: 100vh;
-        font-family: system-ui ,Sans-Serif;
-      }
-      header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem 1rem;
-        min-width: 100%;
-        background:rgb(254,254,255);
-        color:black ;
-      }
-      .tabs {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        justify-content: center;
-        gap: 1.5rem;
-}
-      
-      .tabs a {
-        text-decoration: none;
-        color: black;
-        font-weight: 600
-      }
-      #hero{
-        margin-top: 1.8rem;
-        text-align: center;
-      }
-      #cta{
-        color:white;
-        font-size: 140%;
-        border-radius: 25%;
-        background: orange;
-        width: 120px;
-        height: 40px;
-        text-decoration: none;
-        padding-top: 1rem;
-        text-align: center;
-        align-self: center;
-      }
-      #cta hover{
-        background: blue ;
-      }
-      #main{
-        margin-top: 1rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 15px;
-        font-size:1.5rem ;
-      }
-      .desc{
-        padding-bottom:1.8rem;
-        height: 50px;
-        color: white;
-        background: rgba(1,7,80,1);
-      }
-      footer{
-        min-width: 100%;
-        background:rgb(254,254,255);
-        height: auto;
-        color:black ;
-       text-align: center; 
-       margin-top: auto;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SiteSage builds fast, affordable, high-quality websites for small businesses.">
+    <meta property="og:title" content="SiteSage – Simple Website Builder">
+    <meta property="og:description" content="We help small businesses gain online exposure with clean, effective websites.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="Style.css"/>
+    <title>SiteSage – Your Efficient Website Builder</title>
   </head>
+
   <body>
     <header>
-      <h1>
-        SiteSage
-      </h1>
-      <nav aria-label="Main tabs">
-        <ul class="tabs">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-     </nav>
+      <h1>SiteSage</h1>
+      <div class="tabs">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+      </div>
     </header>
+
     <article id="hero" style="color:white">
-      <h1>Your simple website builder</h1> 
-      <h3>we help small businesses gain online exposure by building simple neatly designed websites</h3>
-    </article >
-    <div id="cta"><a href="https://wa.me/237678759806">contact us</a></div>
+      <h2>Your simple website builder.</h2> 
+      <h3>
+        We help small businesses gain online exposure by building clean,
+        fast, and neatly designed websites that convert visitors into customers.
+      </h3>
+    </article>
+    
+    <a id="cta" href="https://wa.me/237678759806">Contact Now</a>
+
+    <div style="color:white; margin-top:20px">
+      <h2>Why choose us</h2>
+    </div>
+
     <div id="main">
       <div class="desc">
-       <p>🚚    speedy completion </p>
+        <h3>Speedy completion</h3>
+        <p>
+          Most websites are completed within a few days, allowing you to
+          get online quickly and start attracting customers immediately.
+        </p>
       </div>
+
       <div class="desc">
-        <p>💰    Affordable price ranges </p>
+        <h3>Affordable price ranges</h3>
+        <p>
+          We offer clear, budget-friendly pricing designed specifically
+          for startups and small businesses—no hidden costs.
+        </p>
       </div>
+
       <div class="desc">
-       <p>👌     simple quality sites</p>
+        <h3>Simple, quality sites</h3>
+        <p>
+          Our sites are clean, readable, and mobile-friendly, ensuring
+          strong user experience and higher conversion rates.
+        </p>
       </div>
     </div>
+
     <footer>
-      
-      contact at +237 678 759 806 <br>
-      OR email chiemeriamarvelous10@gmail.com<br>
-       © SiteSage 2026
+      Contact: +237 678 759 806 <br>
+      Email: chiemeriamarvelous10@gmail.com <br>
+      © SiteSage 2026
     </footer>
   </body>
 </html>
