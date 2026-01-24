@@ -1,68 +1,136 @@
-body{
-       margin-left: 20px;
-       margin-right: 20px;
-       display: flex;
-       flex-direction: column;
-        background:rgb(1,7,48);
-        font-family: system-ui ,Sans-Serif;
-        
-      }
-header{
-        margin-right: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem 1rem;
-        background:none;
-        color:orange ;
-      }
-.tabs {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: center;
-        gap: 2rem;
+:root{
+        --bg: #010730;
+        --panel-bg: rgba(1,7,80,1);
+        --accent: #ff8c00; /* orange */
+        --text: #fff;
+        --gap: 1.25rem;
+        --radius: 15px;
+        --pad: 1rem;
+        --card-min: 210px;
+        --transition: 160ms ease;
 }
-      
-.tabs a {
-        text-decoration: none;
-        color:orange;
-      }
- #hero{
-        margin-top: 1.8rem;
-        text-align: center;
-      }
+
+/* Base / layout */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+        margin:0 20px;
+        min-height:100vh;
+        display:flex;
+        flex-direction:column;
+        background:var(--bg);
+        color:var(--text);
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+}
+
+/* Header */
+header{
+        padding: .5rem 1rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:.5rem;
+        background:transparent;
+        color:var(--accent);
+}
+
+/* Tabs */
+.tabs{
+        display:flex;
+        gap:2rem;
+        list-style:none;
+        padding:0;
+        margin:0;
+        justify-content:center;
+        align-items:center;
+}
+.tab-link, .tabs a{
+        color:var(--accent);
+        text-decoration:none;
+        padding:.3125rem .5rem;
+        border-radius:6px;
+        transition: color var(--transition), transform var(--transition), background var(--transition);
+        display:inline-flex;
+        align-items:center;
+        gap:.25rem;
+}
+.tab-link:hover,
+.tab-link:focus-visible,
+.tabs a:hover,
+.tabs a:focus-visible{
+        color:#0033cc;
+        transform:translateY(-2px);
+        outline:none;
+}
+
+/* Hero / CTA */
+#hero{margin-top:1.8rem;text-align:center}
 #cta{
-        color:white;
-        font-size: 140%;
-        border-radius: 30px;
-        background: orange;
-        height: auto;
-        text-decoration: none;
-        padding: 1rem;
-        text-align: center;
-        align-self: center;
-      }
-#cta:hover{
-        color:blue ;
-      }
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        padding:.9rem 1.2rem;
+        border-radius:30px;
+        background:var(--accent);
+        color:#fff;
+        text-decoration:none;
+        cursor:pointer;
+        transition: transform var(--transition), box-shadow var(--transition);
+        box-shadow:0 6px 18px rgba(0,0,0,.18);
+        border:none;
+        margin: .75rem auto 0;
+}
+#cta:hover{transform:translateY(-3px); color:#002a9c}
+#cta:focus-visible{outline:2px solid rgba(255,140,0,.25);outline-offset:3px}
+
+/* Main area: responsive grid for consistent repaint/layout */
 #main{
-        margin-top: 0.25rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        justify-content: center;
-      }
+        margin-top:.25rem;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(var(--card-min), 1fr));
+        gap:40px;
+        justify-items:center;
+        width:100%;
+        align-content:start;
+        padding-bottom:1rem;
+}
+
+/* Reusable card */
 .desc{
         padding:1.8rem;
-        text-align: center;
-        border-radius:15px;
-        width: 210px;
-        color: white;
-        background: rgba(1,7,80,1);
-      }
+        text-align:center;
+        border-radius:var(--radius);
+        width:100%;
+        max-width:340px;
+        color:var(--text);
+        background:var(--panel-bg);
+        transition: transform var(--transition), box-shadow var(--transition);
+        box-shadow:0 6px 18px rgba(0,0,0,.18);
+        -webkit-tap-highlight-color:transparent;
+}
+.desc:hover{transform:translateY(-4px)}
+/* make links inside cards more tappable */
+.desc a{color:var(--accent);text-decoration:none;padding:.25rem .35rem;border-radius:6px}
+
+/* Footer */
 footer{
-        margin-top: 40px;
-        color:white;
-       text-align: center; 
-      }
+        margin-top:40px;
+        color:var(--text);
+        text-align:center;
+        padding:1rem 0;
+}
+
+/* Accessibility / motion preference */
+@media (prefers-reduced-motion: reduce){
+        *{transition:none!important; animation:none!important}
+}
+
+/* Small screens adjustments */
+@media (max-width:520px){
+        body{margin:0 12px}
+        .tabs{gap:1rem}
+        #cta{width:100%; padding:.85rem; border-radius:12px}
+        .desc{max-width:100%}
+}
