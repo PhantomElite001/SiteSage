@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about BrightDev — who we are, what drives us, and why we build websites for small businesses." />
+  <meta property="og:title" content="BrightDev – About Us" />
+  <meta property="og:description" content="Meet the team behind BrightDev and learn our story." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <title>BrightDev – About Us</title>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Bright<span>Devs</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="Contact.html" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-wrap">
+
+    <!-- Hero -->
+    <div class="hero">
+      <span class="hero-eyebrow">Our story</span>
+      <h1>We build websites<br><em>that work.</em></h1>
+      <p>BrightDev was founded with one goal: give small businesses the same quality web presence that big companies pay a fortune for — at a price that actually makes sense.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Story -->
+    <section>
+      <div class="about-grid">
+        <div class="fade-up">
+          <div class="section-label">Who we are</div>
+          <h2 class="section-title">A small team.<br>A big impact.</h2>
+          <p style="color:var(--muted); margin-bottom:1rem;">We're a lean web development studio based in Cameroon, passionate about helping local and global small businesses establish a professional online presence.</p>
+          <p style="color:var(--muted); margin-bottom:1.5rem;">We believe every business — no matter how small — deserves a website that looks great, loads fast, and actually brings in customers. We cut through the noise and deliver exactly that.</p>
+          <a class="btn btn-primary" href="Contact.html">Work with us</a>
+
+          <div class="about-stats">
+            <div class="stat fade-up">
+              <span class="stat-num">50+</span>
+              <span class="stat-label">Sites delivered</span>
+            </div>
+            <div class="stat fade-up">
+              <span class="stat-num">3 days</span>
+              <span class="stat-label">Avg. delivery time</span>
+            </div>
+            <div class="stat fade-up">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Mobile-friendly</span>
+            </div>
+            <div class="stat fade-up">
+              <span class="stat-num">5★</span>
+              <span class="stat-label">Client satisfaction</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual fade-up">🌐</div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Values -->
+    <section>
+      <div class="section-label">Our values</div>
+      <h2 class="section-title">What we stand for.</h2>
+      <p class="section-sub">The principles that shape every site we build.</p>
+
+      <div class="card-grid">
+        <div class="card fade-up">
+          <div class="card-icon">🔍</div>
+          <h3>Transparency</h3>
+          <p>No surprise fees. Clear timelines. You always know exactly what you're paying for and when to expect it.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">🚀</div>
+          <h3>Speed</h3>
+          <p>We move fast — and we build fast sites too. Time is money, and we respect both.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">🤝</div>
+          <h3>Partnership</h3>
+          <p>We treat your business like it's our own. Your success is literally our portfolio.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">🏆</div>
+          <h3>Quality</h3>
+          <p>We don't ship sites we wouldn't be proud to put our name on. Every pixel matters.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CTA -->
+    <section style="text-align:center; padding: 4rem 0;">
+      <div class="section-label">Ready to start?</div>
+      <h2 class="section-title fade-up">Let's build something<br><em>great together.</em></h2>
+      <p style="color:var(--muted); margin-bottom:2rem;" class="fade-up">Reach out via WhatsApp, email, or phone — we respond fast.</p>
+      <div class="hero-btns fade-up">
+        <a class="btn btn-primary" href="https://wa.me/237678759806?text=Hello%20I%20need%20a%20website">Message us on WhatsApp</a>
+        <a class="btn btn-outline" href="pricing.html">See our pricing</a>
+      </div>
+    </section>
+
+  </div><!-- /page-wrap -->
+
+  <footer>
+    <div class="page-wrap">
+      <p>© 2025 BrightDev &nbsp;·&nbsp; +237 678 759 806 &nbsp;·&nbsp; <a href="mailto:brightdev237@gmail.com">brightdev237@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          e.target.style.transitionDelay = (i * 0.08) + 's';
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>

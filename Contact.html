@@ -1,34 +1,112 @@
-<!doctype html>
-<html>
-  <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Contact sitesage now to get yuor first site" />
-        <meta property="og:title" content="SiteSage – Contact" />
-        <meta property="og:description" content="SiteSages's Contact page for ready clients" />
-        <meta property="og:type" content="website" />
-        <link rel="stylesheet" href="Style.css" />
-        <title>SiteSage – Contact</title>
-        <script defer src="/_vercel/insights/script.js"></script>
-  </head>
-  <body>
-    <header>
-      <h1>SiteSage</h1>
-      <div class="tabs">
-          <a href="/">Home</a>
-          <a href="contact.html" ><u>Contact</u></a>
-          <a href="services.html">Services</a>
-      </div>
-    </header>
-    <h2> Contact us using </h2>
-    <div style="display:grid;grid-template-culumns:repeat(1,1fr);gap:30px">
-      <a id="cta" href="https://wa.me/237678759806?text=Hello%20I%20need%20a%20website">Whatsapp</a>
-      <a id="cta" href="mailto: chiemeriamarvelous10@gmail.com">Email</a>
-      <a id="cta" href="tel:+237678759806">Phone</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact BrightDev to get your first professional website." />
+  <meta property="og:title" content="BrightDev – Contact" />
+  <meta property="og:description" content="Reach out to BrightDev via WhatsApp, email, or phone." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <title>BrightDev – Contact</title>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Bright<span>Devs</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="Contact.html" class="nav-cta active">Contact</a>
+      </nav>
     </div>
-    <footer id="contact">
-      <p>Ready to start? Email us at <a href="mailto: chiemeriamarvelous10@gmail.com">chiemeriamarvelous10@gmail.com</a></p>
-      <p>&copy; SiteSage</p>
-    </footer>
-  </body>
+  </header>
+
+  <div class="page-wrap">
+
+    <!-- Hero -->
+    <div class="hero">
+      <span class="hero-eyebrow">Get in touch</span>
+      <h1>Let's build your<br><em>website today.</em></h1>
+      <p>We respond fast. Pick the channel that works best for you and we'll get the conversation started.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Contact options -->
+    <section>
+      <div class="section-label">Reach us on</div>
+      <h2 class="section-title">We're easy<br>to reach.</h2>
+
+      <div class="contact-grid">
+        <a class="contact-card fade-up" href="https://wa.me/237678759806?text=Hello%20I%20need%20a%20website">
+          <span class="icon">💬</span>
+          <span class="label">WhatsApp</span>
+          <span class="detail">+237 678 759 806</span>
+        </a>
+        <a class="contact-card fade-up" href="mailto:brightdev237@gmail.com">
+          <span class="icon">✉️</span>
+          <span class="label">Email</span>
+          <span class="detail">brightdev237@gmail.com</span>
+        </a>
+        <a class="contact-card fade-up" href="tel:+237678759806">
+          <span class="icon">📞</span>
+          <span class="label">Phone</span>
+          <span class="detail">+237 678 759 806</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- What to expect -->
+    <section>
+      <div class="section-label">What happens next</div>
+      <h2 class="section-title">Here's how we<br>get started.</h2>
+      <p class="section-sub">After you reach out, here's what to expect from us.</p>
+
+      <div class="card-grid">
+        <div class="card fade-up">
+          <div class="card-icon">⚡</div>
+          <h3>Fast response</h3>
+          <p>We reply within hours — usually much faster. No waiting days for a callback.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">🎯</div>
+          <h3>Free consultation</h3>
+          <p>We'll discuss your needs, your goals, and recommend the right plan — no obligation.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">🚀</div>
+          <h3>Quick turnaround</h3>
+          <p>Once we agree on scope and terms, we get to work immediately. Most sites live in days.</p>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-wrap -->
+
+  <footer>
+    <div class="page-wrap">
+      <p>© 2025 BrightDev &nbsp;·&nbsp; +237 678 759 806 &nbsp;·&nbsp; <a href="mailto:brightdev237@gmail.com">brightdev237@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          e.target.style.transitionDelay = (i * 0.08) + 's';
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+  </script>
+</body>
 </html>
