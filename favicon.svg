@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
+  <!-- Background -->
+  <rect width="64" height="64" rx="14" fill="#0B1F3A"/>
+
+  <!-- Sun -->
+  <g transform="translate(32,32)">
+    
+    <!-- Rays -->
+    <g stroke="#FFD166" stroke-width="3" stroke-linecap="round">
+      <line x1="0" y1="-16" x2="0" y2="-22"/>
+      <line x1="0" y1="16" x2="0" y2="22"/>
+      <line x1="-16" y1="0" x2="-22" y2="0"/>
+      <line x1="16" y1="0" x2="22" y2="0"/>
+    </g>
+
+    <!-- Core -->
+    <circle r="10" fill="#FFD166"/>
+    
+  </g>
+
+</svg>
